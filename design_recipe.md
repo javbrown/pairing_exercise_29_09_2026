@@ -23,20 +23,22 @@ Order is kept: names appear in the same order they were given.
 ## 2 function signature
 ```python
 # Parameters:
-# - 
+# - list of names
 # Return type:
-# - 
+# - string of names 
 # Side Effects:
 # - 
-def your_function():
+def single_readable_line():
     pass
 ```
 
 ## 3 exampples
 ```python
 # scenario 1
-
+single_readable_line() => an empty string ""
 # scenario 2
-
+single_readable_line(['bob']) => "bob"
 # scenario 3
-```
+single_readable_line(['Bob', 'bart']) => "bob & bart"
+4
+single_readable_line(more that three names) => " name with commas, and & before last name"
