@@ -2,6 +2,8 @@
 def single_readable_line(names_list):
     if names_list == []:
         return ""
+    elif type(names_list) != list:
+        raise Exception("Please enter a list")
     elif len(names_list) == 1:
         return str(names_list[0])
     elif len(names_list) == 2:
